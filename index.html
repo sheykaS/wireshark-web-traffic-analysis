@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Network Lab</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f6f8;
+            color: #222;
+        }
+
+        header {
+            background: #17202a;
+            color: white;
+            text-align: center;
+            padding: 35px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        button {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            background: #2c3e50;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Cyber Network Lab</h1>
+    <p>Exploring Network Traffic with Wireshark</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>About This Project</h2>
+        <p>
+            This local website is part of a beginner cybersecurity
+            project that investigates web network traffic using Wireshark.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Network Analysis</h2>
+        <p>
+            Network packets can contain information about communication
+            between devices, including protocols, addresses and traffic patterns.
+        </p>
+
+        <button onclick="showMessage()">Run Network Test</button>
+
+        <p id="message"></p>
+    </div>
+
+    <div class="card">
+        <h2>Project Tools</h2>
+        <ul>
+            <li>HTML & CSS</li>
+            <li>IntelliJ IDEA</li>
+            <li>Wireshark</li>
+            <li>Microsoft Excel</li>
+            <li>Power BI</li>
+        </ul>
+    </div>
+
+</div>
+
+<footer>
+    <p>Wireshark Web Traffic Analysis Project</p>
+</footer>
+
+<script>
+    function showMessage() {
+        document.getElementById("message").innerText =
+            "Network test initiated successfully.";
+    }
+</script>
+</body>
+</html>
